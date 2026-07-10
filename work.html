@@ -70,7 +70,7 @@
 ══════════════════════════════════ -->
 <section class="page-section page-hero" id="work" style="min-height:auto;border-bottom:none;padding-bottom:0;overflow:hidden;">
   <div class="page-doodle-bg" aria-hidden="true">
-    <img src="images/doodle-sheet.jpg" alt=""/>
+    <img src="images/doodle-sheet.jpg" alt="" onerror="this.style.display='none';"/>
   </div>
   <div class="inner" style="position:relative;z-index:1;">
     <span class="sec-eyebrow">Selected Work</span>
@@ -110,7 +110,7 @@
     <div class="proj-grid">
 
       <!-- PROJECT 1: Uncle Green -->
-      <article class="proj-card sr up" data-modal="p1" tabindex="0" role="button" aria-label="View Uncle Green project">
+      <a class="proj-card sr up" href="uncle-green.html" aria-label="View Uncle Green project">
         <div class="proj-thumb">
           <span class="proj-tag t-orange">Brand Identity</span>
           <img src="images/uncle-green-cover.jpg" alt="Uncle Green brand identity" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"/>
@@ -121,10 +121,10 @@
           <p>A brand system built around warmth, personality, and a visual language designed to feel polished and distinct.</p>
           <span class="proj-link" role="button" tabindex="-1">View Case Study →</span>
         </div>
-      </article>
+      </a>
 
       <!-- PROJECT 2: Doodling — tall right -->
-      <article class="proj-card sr up d2" data-modal="p2" tabindex="0" role="button" aria-label="View Doodling project">
+      <a class="proj-card sr up d2" href="doodling.html" aria-label="View Doodling project">
         <div class="proj-thumb">
           <span class="proj-tag t-sage">Illustration</span>
           <img src="images/doodling-cover.jpg" alt="Doodling illustration work" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"/>
@@ -135,10 +135,10 @@
           <p>Expressive line work and character illustration — the hand-drawn energy that feeds the rest of my practice.</p>
           <span class="proj-link" role="button" tabindex="-1">View Project →</span>
         </div>
-      </article>
+      </a>
 
       <!-- PROJECT 3: Lunch Box -->
-      <article class="proj-card sr up d1" data-modal="p3" tabindex="0" role="button" aria-label="View Lunch Box project">
+      <a class="proj-card sr up d1" href="lunch-box.html" aria-label="View Lunch Box project">
         <div class="proj-thumb">
           <span class="proj-tag">Web Design</span>
           <img src="images/lunch-box-cover.jpg" alt="Lunch Box landing page" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"/>
@@ -149,7 +149,21 @@
           <p>A digital-first landing page concept focused on visual hierarchy, rhythm, and clear typographic structure.</p>
           <span class="proj-link" role="button" tabindex="-1">View Case Study →</span>
         </div>
-      </article>
+      </a>
+
+      <!-- PROJECT 4: Text Me Back -->
+      <a class="proj-card sr up d2" href="text-me-back.html" aria-label="View Text Me Back project">
+        <div class="proj-thumb">
+          <span class="proj-tag">Branding + Packaging</span>
+          <img src="images/text-me-back-cover.png" alt="Text Me Back relationship gifting brand" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"/>
+          <div class="proj-thumb-placeholder" style="display:none;">Add images/text-me-back-cover.png<small>1200×900px recommended</small></div>
+        </div>
+        <div class="proj-body">
+          <h3>Text Me Back</h3>
+          <p>A playful relationship gifting brand — branding and packaging for couples who celebrate the funny, awkward, honest moments.</p>
+          <span class="proj-link" role="button" tabindex="-1">View Case Study →</span>
+        </div>
+      </a>
 
     </div>
 
@@ -172,11 +186,8 @@
 
     <div class="print-gallery-grid">
       <a class="print-gallery-card sr up" href="posters.html">
-        <div class="pg-collage" aria-hidden="true">
-          <img src="images/posters-01.jpg" alt="" onerror="this.outerHTML='<div class=\'pg-tile-placeholder\'></div>'"/>
-          <img src="images/posters-02.jpg" alt="" onerror="this.outerHTML='<div class=\'pg-tile-placeholder\'></div>'"/>
-          <img src="images/posters-03.jpg" alt="" onerror="this.outerHTML='<div class=\'pg-tile-placeholder\'></div>'"/>
-          <img src="images/posters-04.jpg" alt="" onerror="this.outerHTML='<div class=\'pg-tile-placeholder\'></div>'"/>
+        <div class="pg-cover" aria-hidden="true">
+          <img src="images/poster-01.png" alt="" onerror="this.outerHTML='<div class=\'pg-tile-placeholder\'></div>'"/>
         </div>
         <div class="pg-overlay"></div>
         <div class="pg-body">
@@ -188,10 +199,7 @@
       </a>
 
       <a class="print-gallery-card sr up d1" href="book-covers.html">
-        <div class="pg-collage" aria-hidden="true">
-          <img src="images/book-covers-01.jpg" alt="" onerror="this.outerHTML='<div class=\'pg-tile-placeholder\'></div>'"/>
-          <img src="images/book-covers-02.jpg" alt="" onerror="this.outerHTML='<div class=\'pg-tile-placeholder\'></div>'"/>
-          <img src="images/book-covers-03.jpg" alt="" onerror="this.outerHTML='<div class=\'pg-tile-placeholder\'></div>'"/>
+        <div class="pg-cover" aria-hidden="true">
           <img src="images/book-covers-04.jpg" alt="" onerror="this.outerHTML='<div class=\'pg-tile-placeholder\'></div>'"/>
         </div>
         <div class="pg-overlay"></div>
@@ -217,7 +225,7 @@
     <a href="work.html">Work</a>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
-    <a href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+    <a href="resume.html">Resume</a>
   </nav>
 </footer>
 
@@ -237,33 +245,6 @@
   </a>
 </nav>
 
-<!-- PROJECT MODAL -->
-<div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-label="Project detail">
-  <div class="modal" id="modal-box">
-    <div class="modal-hero" id="modal-hero">
-      <!-- filled by projects.js: carousel slides, dots, arrows, tag, close button -->
-    </div>
-    <div class="modal-body">
-      <h2 id="modal-title"></h2>
-      <div class="modal-meta" id="modal-meta"></div>
-      <div class="modal-section">
-        <h4>The Challenge</h4>
-        <p id="modal-challenge"></p>
-      </div>
-      <div class="modal-section">
-        <h4>The Approach</h4>
-        <p id="modal-approach"></p>
-      </div>
-      <div class="modal-section">
-        <h4>The Outcome</h4>
-        <p id="modal-outcome"></p>
-      </div>
-      <div class="modal-footer" id="modal-footer"></div>
-    </div>
-  </div>
-</div>
-
-<script src="projects.js"></script>
 <script src="main.js"></script>
 </body>
 </html>

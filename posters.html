@@ -70,7 +70,7 @@
 ══════════════════════════════════ -->
 <section class="page-section page-hero" id="posters" style="min-height:auto;border-bottom:none;padding-bottom:0;overflow:hidden;">
   <div class="page-doodle-bg" aria-hidden="true">
-    <img src="images/doodle-sheet.jpg" alt=""/>
+    <img src="images/doodle-sheet.jpg" alt="" onerror="this.style.display='none';"/>
   </div>
   <div class="inner" style="position:relative;z-index:1;">
     <a class="proj-link sr up" href="work.html" style="margin-bottom:1rem;">← Back to Work</a>
@@ -118,7 +118,7 @@
     <a href="work.html">Work</a>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
-    <a href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+    <a href="resume.html">Resume</a>
   </nav>
 </footer>
 
@@ -145,9 +145,8 @@
 <script>
   const galleryLabel = 'Posters';
   const galleryImages = [
-    'images/posters-01.jpg','images/posters-02.jpg','images/posters-03.jpg','images/posters-04.jpg',
-    'images/posters-05.jpg','images/posters-06.jpg','images/posters-07.jpg','images/posters-08.jpg',
-    'images/posters-09.jpg','images/posters-10.jpg','images/posters-11.jpg','images/posters-12.jpg'
+    'images/poster-01.png','images/poster-02.png','images/poster-03.png',
+    'images/poster-04.png','images/poster-05.png'
   ];
   document.addEventListener('DOMContentLoaded',()=>{
     const el = document.getElementById('stat-count');
